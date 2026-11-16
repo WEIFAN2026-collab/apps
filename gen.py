@@ -19,15 +19,18 @@ APPS = {
         "uses": {
             "en": [
                 "<b>Camera and photos</b>: images you take or choose are read on your iPhone to find dates, deadlines and amounts. They are never uploaded.",
-                "<b>Calendar and Reminders</b>: used only to add the events and reminders you confirm.",
+                "<b>Calendar and Reminders</b>: used only to add the events and reminders you confirm. Your existing calendar events are not read. Items you add are then managed in those apps.",
+                "<b>Text recognition and summaries</b>: done on your iPhone with Apple's Vision framework and Apple Intelligence on-device model. No internet connection is needed.",
             ],
             "ja": [
                 "<b>カメラと写真</b>：撮影・選択した画像は iPhone 上で読み取り、日付・締め切り・金額を見つけます。アップロードはしません。",
-                "<b>カレンダーとリマインダー</b>：あなたが確認した予定とリマインダーを追加するためだけに使います。",
+                "<b>カレンダーとリマインダー</b>：あなたが確認した予定とリマインダーを追加するためだけに使います。既存の予定は読み取りません。追加した項目はそれぞれのアプリで管理されます。",
+                "<b>文字の読み取りと要約</b>：Apple の Vision フレームワークと Apple Intelligence の端末内モデルで、iPhone 上で行います。インターネット接続は必要ありません。",
             ],
             "zh": [
                 "<b>相机和照片</b>：你拍摄或选择的图片只在 iPhone 上识别日期、截止日和金额，不会上传。",
-                "<b>日历和提醒事项</b>：只用来添加你确认过的日程和提醒。",
+                "<b>日历和提醒事项</b>：只用来添加你确认过的日程和提醒，不读取你已有的日程。添加后的条目由日历和提醒事项 App 管理。",
+                "<b>文字识别和摘要</b>：用 Apple 的 Vision 框架和 Apple Intelligence 端侧模型在 iPhone 上完成，不需要联网。",
             ],
         },
     },
