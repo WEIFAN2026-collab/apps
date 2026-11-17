@@ -78,6 +78,31 @@ APPS = {
             ],
         },
     },
+    "gamemannaka": {
+        "name": {"en": "Kanji Center", "ja": "熟語のまんなか", "zh": "熟语填心"},
+        "desc": {
+            "en": "A daily kanji puzzle: find the one character that completes four Japanese words around it. Five new puzzles every day, plus stages graded from early elementary school to the full jōyō list.",
+            "ja": "まんなかの一字を当てて、上下左右の4つの熟語を完成させる漢字パズル。毎日5問の新しい問題と、小学校低学年から常用漢字までの学年別ステージ。",
+            "zh": "猜出中间那一个汉字，让上下左右组成 4 个日语熟语。每天 5 道新题，另有从小学低年级到常用汉字的分级关卡。",
+        },
+        "uses": {
+            "en": [
+                "<b>Reading words aloud</b>: uses the Japanese voice built into your iPhone. Nothing is sent over the internet.",
+                "<b>Dictionary</b>: the word lookup button opens the dictionary built into iOS.",
+                "<b>Progress</b>: your solved puzzles, streak and settings are saved only on your iPhone.",
+            ],
+            "ja": [
+                "<b>読み上げ</b>：iPhone に内蔵された日本語の音声を使います。インターネットには何も送信しません。",
+                "<b>辞書</b>：辞書ボタンは iOS に内蔵された辞書を開きます。",
+                "<b>進み具合</b>：解いた問題、連続日数、設定は iPhone の中だけに保存されます。",
+            ],
+            "zh": [
+                "<b>朗读</b>：使用 iPhone 内置的日语语音，不会通过网络发送任何内容。",
+                "<b>词典</b>：查词按钮打开的是 iOS 内置词典。",
+                "<b>进度</b>：已解的题目、连续天数和设置只保存在你的 iPhone 上。",
+            ],
+        },
+    },
 }
 
 T = {
