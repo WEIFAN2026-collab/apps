@@ -103,6 +103,84 @@ APPS = {
             ],
         },
     },
+    "wrenchcheck": {
+        "name": {"en": "WrenchCheck", "ja": "WrenchCheck", "zh": "WrenchCheck"},
+        "updated": {"en": "Last updated: 28 November 2026", "ja": "最終更新日：2026年11月28日", "zh": "最后更新：2026年11月28日"},
+        "desc": {
+            "en": "Understand car warning lights, appliance error codes and unusual noises, check repair quotes line by line, and keep your vehicles and home appliances in one place.",
+            "ja": "車の警告灯や家電のエラー表示、気になる異音から考えられる原因を調べ、修理見積りの妥当性を項目ごとに確認できるアプリです。マイカー・家電の整備履歴や保証期限もまとめて管理できます。",
+            "zh": "帮你看懂汽车故障灯、家电报错码和各种异响，逐项核对维修报价单并生成礼貌沟通话术，同时集中管理车辆与大家电的维保记录与保修提醒。",
+        },
+        "summary": {
+            "en": "{app} requires no account, contains no ads and does not track you across apps or websites. Your vehicle and appliance records stay on your iPhone. Only when you tap Diagnose or Check Quote—and only after you agree on the consent screen—are the photo, audio clip, model details or quote text you submit sent through our secure server to Google Gemini AI to generate your result.",
+            "ja": "{app}はアカウント登録不要で、広告や他社アプリ・Webサイトをまたぐトラッキングはありません。マイカー・家電の記録はiPhone内に保存されます。故障診断や修理見積りチェックを実行し、事前の同意画面でご承諾いただいた場合のみ、送信した写真・録音・型番・見積り内容が当社の安全なサーバーを経由してGoogle Gemini AIへ送信されます。これらのデータは結果の作成にのみ使用されます。",
+            "zh": "{app} 无需注册账号，不含广告，也不进行跨 App 或跨网站追踪。你的车家档案和维保记录均保存在 iPhone 本机。只有当你主动发起故障排查或报价核查、并在知情同意页明确同意后，你提交的照片、录音、车型型号或报价单文字才会经由我们的安全服务器交由 Google Gemini AI 处理，且仅用于生成本次结果。",
+        },
+        "uses": {
+            "en": [
+                "<b>Camera and photo library</b>: used only to capture or pick dashboard warning lights, appliance displays or repair quotes that you choose to submit for AI analysis.",
+                "<b>Microphone</b>: used only when you record up to 10 seconds of a vehicle or appliance noise for AI diagnosis. Nothing is recorded in the background.",
+                "<b>Cloud AI processing (Google Gemini)</b>: submitted photos, audio clips, error codes and quote text are transmitted over HTTPS via our server (Cloudflare Workers) to Google Gemini solely to produce your result. They are not used for advertising or linked to your identity. You can revoke AI upload consent at any time in Settings.",
+                "<b>Anonymous device identifier</b>: a random, non-tracking device ID (not IDFA) is generated locally solely to count your 3 free AI checks per month.",
+                "<b>Notifications</b>: optional local notifications scheduled on your iPhone 30 days before a recorded warranty expires.",
+            ],
+            "ja": [
+                "<b>カメラ・写真ライブラリ</b>：故障診断や修理見積りチェックのために、ご自身で選択・撮影した警告灯・表示部・見積書の画像のみを使用します。",
+                "<b>マイク</b>：異音診断のために最大10秒間の音声を録音するときのみ使用します。バックグラウンドで録音することはありません。",
+                "<b>クラウドAI処理（Google Gemini）</b>：送信された写真・録音・型番・エラーコード・見積り内容は、結果の作成のみを目的として当社の安全なサーバー（Cloudflare Workers）経由でGoogle Gemini AIへHTTPS送信されます。広告目的での利用や個人との紐付けは行いません。設定画面からいつでもAIデータ送信の同意を取り消せます。",
+                "<b>匿名デバイスID</b>：毎月の無料回数（月3回）をカウントするためだけに端末内でランダム生成されるID（IDFAではありません）を使用します。個人特定や追跡には使いません。",
+                "<b>通知</b>：登録した保証期限の30日前に、iPhone内のローカル通知でお知らせします。",
+            ],
+            "zh": [
+                "<b>相机与相册</b>：仅用于拍摄或选取你主动提交的仪表盘故障灯、家电显示屏或维修报价单照片。",
+                "<b>麦克风</b>：仅在你主动录制最长 10 秒异响用于排查时使用，不会在后台录音。",
+                "<b>云端 AI 处理（Google Gemini）</b>：你提交的照片、录音、型号故障码及报价单文字会通过 HTTPS 经我们的服务器（Cloudflare Workers）交由 Google Gemini 处理，仅用于生成本次排查或核价结果，不用于广告也不关联真实身份。你随时可在 App「设置」中撤销上传授权。",
+                "<b>匿名设备标识</b>：仅在 App 内随机生成非追踪用的匿名设备 ID（非 IDFA），用于统计每月 3 次免费额度。",
+                "<b>本地通知</b>：可选功能，在你设定的保修到期日前 30 天于本机触发提醒。",
+            ],
+        },
+        "purchase": {
+            "en": "WrenchCheck offers 3 free AI checks per month and an optional auto-renewing subscription (WrenchCheck Pro, annual with a 7-day free trial or weekly) processed by Apple through the App Store. We never receive your payment details or Apple Account information. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period in your Apple Account settings.",
+            "ja": "WrenchCheckは毎月3回まで無料でAI診断・見積りチェックを利用できます。回数無制限の自動更新サブスクリプション（WrenchCheck Pro：7日間無料トライアル付き年額プラン／週額プラン）の決済はApp Storeを通じてAppleが処理します。支払い情報やApple Accountの情報を当社が受け取ることはありません。期間終了の24時間前までに解約しない限り自動更新され、設定アプリのApple Accountからいつでも管理・解約できます。",
+            "zh": "WrenchCheck 每月提供 3 次免费 AI 排查或核价，另提供可选的自动续期订阅（WrenchCheck Pro，含 7 天免费试用的年度方案或周度方案），由 Apple 通过 App Store 处理。我们不会获取你的付款信息或 Apple 账户信息。除非在当前周期结束前至少 24 小时取消，订阅将自动续期，你可随时在 Apple 账户设置中管理或取消。",
+        },
+        "delete": {
+            "en": "Your garage vehicles, appliances, maintenance logs and diagnosis history are stored locally on your iPhone; deleting the app removes all local records. We do not store user accounts or keep copies of your uploaded photos, audio clips or quotes after generating your result.",
+            "ja": "マイカー・家電の情報、整備履歴、診断履歴はiPhone内に保存され、アプリを削除するとすべて消去されます。当社サーバーにアカウント情報や送信済みの写真・録音・見積書を保存し続けることはありません。",
+            "zh": "你的车家档案、维保记录和历史排查结果均保存在 iPhone 本机，删除 App 即全部清除。我们的服务器不保存用户账号，也不会在生成结果后留存你上传的照片、录音或报价单。",
+        },
+        "kids": {
+            "en": "WrenchCheck is intended for general vehicle and home maintenance guidance and does not knowingly collect personal information from children.",
+            "ja": "本アプリは一般的な車・家電の点検や見積り確認の参考情報を提供するものであり、お子さまの個人情報を意図的に収集することはありません。",
+            "zh": "本 App 面向日常车辆与家电维护参考，不会故意收集儿童的个人信息。",
+        },
+        "safety_h": {"en": "Safety notice", "ja": "安全上のご注意", "zh": "安全提示"},
+        "safety": {
+            "en": "WrenchCheck provides general informational guidance only and does not replace an inspection by a qualified mechanic or technician. If you notice smoke, a burning smell, fluid leaks or a flashing warning light, stop using the vehicle or appliance immediately and contact a professional.",
+            "ja": "本アプリの診断結果および見積りチェックは一般的な参考情報であり、専門業者による点検に代わるものではありません。異臭・発煙・液漏れ・警告灯の点滅がある場合は直ちに使用を中止し、専門業者へご連絡ください。",
+            "zh": "WrenchCheck 提供的排查建议与核价参考仅供一般性参考，不能替代持证技师的专业现场检修。如出现焦味、冒烟、漏液或故障灯闪烁，请立即停止使用并联系专业维修人员。",
+        },
+        "faq": {
+            "en": [
+                ("I subscribed to WrenchCheck Pro, but my limit did not unlock.", "Open Settings in WrenchCheck and tap Restore Purchases while signed in with the same Apple Account you used to subscribe."),
+                ("How do I cancel or manage my subscription?", "Open the iPhone Settings app, tap your Apple Account, then tap Subscriptions and select WrenchCheck."),
+                ("How do I turn off AI data sharing?", "Open Settings inside WrenchCheck to review or revoke your AI processing consent at any time."),
+                ("Will I lose my garage records if I switch iPhones?", "Your garage assets and logs are stored on your iPhone. Transferring via iCloud or encrypted computer backup preserves them."),
+            ],
+            "ja": [
+                ("WrenchCheck Proに登録したのに制限が解除されない", "アプリ内の「設定」を開き、「購入を復元」をタップしてください。購入時と同じApple Accountでサインインしているかご確認ください。"),
+                ("サブスクリプションの解約・変更方法", "iPhoneの「設定」アプリ＞「Apple Account」＞「サブスクリプション」からWrenchCheckを選択して管理・解約できます。"),
+                ("AIデータ送信の同意を取り消すには", "アプリ内の「設定」画面からいつでもAIデータ送信の同意を取り消せます。"),
+                ("機種変更するとマイカー・家電の記録は消えますか？", "記録はiPhone内に保存されています。iCloudまたはパソコンの暗号化バックアップから新しいiPhoneへ移行すると引き継げます。"),
+            ],
+            "zh": [
+                ("已经订阅了 WrenchCheck Pro，但还是提示次数受限。", "请在 WrenchCheck 的“设置”中点击“恢复购买”，并确认当前登录的是订阅时使用的同一个 Apple 账户。"),
+                ("如何取消或管理订阅？", "打开 iPhone“设置”→ 点击顶部 Apple 账户 →“订阅”，找到 WrenchCheck 即可管理或取消。"),
+                ("如何关闭或撤销 AI 数据上传授权？", "随时可以在 WrenchCheck 的“设置”页查看并撤销 AI 处理授权。"),
+                ("换手机后车家档案会丢失吗？", "档案与维保记录保存在 iPhone 本机，通过 iCloud 或电脑加密备份迁移到新 iPhone 即可保留。"),
+            ],
+        },
+    },
 }
 
 T = {
@@ -193,14 +271,22 @@ def privacy(key, app):
     parts = [lang_nav()]
     for c, _ in LANGS:
         name = app["name"][c]
+        updated = app.get("updated", UPDATED)[c]
+        summary = app.get("summary", T["summary"])[c].format(app=name)
         uses = "".join(f"<li>{u}</li>" for u in app["uses"][c])
+        purchase = app.get("purchase", T["purchase"])[c]
+        delete = app.get("delete", T["delete"])[c]
+        kids = app.get("kids", T["kids"])[c]
+        safety_block = ""
+        if "safety" in app:
+            safety_block = f"<h2>{app['safety_h'][c]}</h2><p>{app['safety'][c]}</p>\n"
         parts.append(f"""<section class="lang" id="{c}" lang="{'zh-Hans' if c == 'zh' else c}">
-<h1>{name} — {T['privacy'][c]}</h1><p class="muted">{UPDATED[c]}</p>
-<h2>{T['summary_h'][c]}</h2><p>{T['summary'][c].format(app=name)}</p>
+<h1>{name} — {T['privacy'][c]}</h1><p class="muted">{updated}</p>
+<h2>{T['summary_h'][c]}</h2><p>{summary}</p>
 <h2>{T['uses_h'][c]}</h2><ul>{uses}</ul><p>{T['uses_note'][c]}</p>
-<h2>{T['purchase_h'][c]}</h2><p>{T['purchase'][c]}</p>
-<h2>{T['delete_h'][c]}</h2><p>{T['delete'][c]}</p>
-<h2>{T['kids_h'][c]}</h2><p>{T['kids'][c]}</p>
+<h2>{T['purchase_h'][c]}</h2><p>{purchase}</p>
+<h2>{T['delete_h'][c]}</h2><p>{delete}</p>
+{safety_block}<h2>{T['kids_h'][c]}</h2><p>{kids}</p>
 <h2>{T['changes_h'][c]}</h2><p>{T['changes'][c]}</p>
 <h2>{T['contact_h'][c]}</h2><p>{T['contact'][c]}<a href="mailto:{EMAIL}">{EMAIL}</a></p>
 </section>""")
@@ -210,12 +296,16 @@ def privacy(key, app):
 def support(key, app):
     parts = [lang_nav()]
     for c, _ in LANGS:
-        faq = "".join(f"<h2>{q}</h2><p>{a}</p>" for q, a in T["faq"][c])
+        faq_items = app.get("faq", T["faq"])[c]
+        faq = "".join(f"<h2>{q}</h2><p>{a}</p>" for q, a in faq_items)
+        safety_block = ""
+        if "safety" in app:
+            safety_block = f"\n<h2>{app['safety_h'][c]}</h2><p>{app['safety'][c]}</p>"
         parts.append(f"""<section class="lang" id="{c}" lang="{'zh-Hans' if c == 'zh' else c}">
 <h1>{app['name'][c]} — {T['support'][c]}</h1><p>{app['desc'][c]}</p>
 <p><a class="btn" href="mailto:{EMAIL}?subject={html.escape(app['name']['en'])}">{T['email_us'][c]}</a></p>
 <p class="muted">{EMAIL} · {T['reply'][c]}</p>
-{faq}
+{faq}{safety_block}
 <p><a href="privacy/">{T['privacy'][c]}</a></p>
 </section>""")
     return page(f"{app['name']['en']} — Support", "".join(parts))
