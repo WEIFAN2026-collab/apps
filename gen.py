@@ -340,6 +340,81 @@ APPS = {
             ],
         },
     },
+    "shelfflip": {
+        "name": {"en": "ShelfFlip", "ja": "ShelfFlip", "zh": "ShelfFlip"},
+        "updated": {"en": "Last updated: 28 November 2026", "ja": "最終更新日：2026年11月28日", "zh": "最后更新：2026年11月28日"},
+        "desc": {
+            "en": "Snap a thrift or secondhand find to check recent resale comps, calculate net profit after marketplace fees and shipping, draft ready-to-post listings, and track your inventory and monthly profit.",
+            "ja": "商品の写真を1〜2枚撮るだけで、フリマ・オークションの相場と手数料・送料を引いた見込み利益をすぐ確認。出品文の作成から在庫管理、月ごとの純利益の集計までまとめて行えるアプリです。",
+            "zh": "拍 1～2 张二手商品照片，几秒查询近期成交行情、自动扣除平台手续费和运费计算预计净利润，一键生成可直接粘贴的上架文案，并管理待卖库存与月度利润账本。",
+        },
+        "summary": {
+            "en": "{app} requires no account, contains no ads and does not track you across apps or websites. Your inventory and profit ledger stay on your iPhone. Only when you run a price lookup—and only after you agree on the consent screen—are the item photos, target marketplace, item note and buy cost sent via our managed server to Google Gemini AI solely to generate your resale estimate and listing draft.",
+            "ja": "{app}はアカウント登録が不要で、広告や他社アプリ・Webサイトをまたぐトラッキングはありません。在庫データや利益の記録はすべてiPhone内に保存されます。相場チェックを実行し、事前の同意画面で同意した場合のみ、送信した商品写真・出品先・商品名メモ・仕入れ値が当社管理のサーバーを経由してGoogle Geminiへ送信されます。",
+            "zh": "{app} 无需注册账号，不含广告，也不进行跨 App 或跨网站追踪。你的库存清单与利润账本均保存在 iPhone 本机。只有当你主动发起行情查询并在知情同意页明确同意后，你提交的商品照片、目标平台、商品备注与买入成本才会经由我们管理的服务器发送至 Google Gemini AI，且仅用于生成本次行情参考与上架文案。",
+        },
+        "uses": {
+            "en": [
+                "<b>Camera and photo library</b>: used only to capture or pick photos of secondhand items that you choose to appraise.",
+                "<b>Cloud AI processing (Google Gemini)</b>: submitted photos, target marketplace, item notes and buy cost are sent over HTTPS via our managed server (Cloudflare Workers) to Google Gemini solely to produce your resale estimate and listing draft. They are never used for advertising, linked to your identity or used to train third-party AI models. You can revoke AI consent anytime in Settings.",
+                "<b>Anonymous device identifier</b>: a random, non-tracking device ID (not IDFA) is generated locally solely to count your 3 free lookups per month and enforce fair-use rate limits.",
+            ],
+            "ja": [
+                "<b>カメラ・写真ライブラリ</b>：相場を調べるために、ご自身で撮影・選択した商品の画像のみを使用します。",
+                "<b>クラウドAI処理（Google Gemini）</b>：送信した商品写真・出品先・商品名メモ・仕入れ値は、相場チェックと出品文の作成のみを目的として当社管理のサーバー（Cloudflare Workers）を経由してGoogle GeminiへHTTPSで送信されます。広告目的や第三者のAIモデルの学習には使用せず、個人を特定することもありません。設定画面からいつでもAIデータ送信の同意を取り消せます。",
+                "<b>匿名デバイスID</b>：毎月の無料枠（月3回）のカウントおよびフェアユース管理のためだけに端末内でランダムに生成されるID（IDFAではありません）を使用します。個人特定や追跡には使いません。",
+            ],
+            "zh": [
+                "<b>相机与相册</b>：仅用于拍摄或选取你主动提交估价的商品照片。",
+                "<b>云端 AI 处理（Google Gemini）</b>：你提交的商品照片、目标平台、商品备注与买入成本仅用于生成本次行情参考与上架文案，会经由我们管理的服务器（Cloudflare Workers）通过 HTTPS 发送至 Google Gemini AI 处理，不用于广告、不关联真实身份，也不用于第三方 AI 模型训练。你随时可在「设置」中撤销同意。",
+                "<b>匿名设备标识</b>：仅在 App 内随机生成非追踪用的匿名设备 ID（非 IDFA），用于统计每月 3 次免费查询额度与合理使用防滥用限流。",
+            ],
+        },
+        "purchase": {
+            "en": "ShelfFlip includes 3 free cloud lookups every month and an optional auto-renewing subscription (ShelfFlip Pro: Annual with a 7-day free trial, or Weekly) for daily sourcing lookups and listing drafts (fair-use limits apply). Payments are processed by Apple through the App Store; we never receive your payment details or Apple Account information. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period in iPhone Settings > Apple Account > Subscriptions.",
+            "ja": "ShelfFlipは毎月3回まで無料で相場チェックができ、日々の仕入れ・出品向けの自動更新サブスクリプション「ShelfFlip Pro」（7日間の無料トライアル付き年額プラン／週額プラン、フェアユース上限あり）も用意しています。無料トライアル期間終了後は、期間終了の24時間前までに解約しない限り自動的に有料プランへ移行し、以降も自動更新されます。決済はApp Storeを通じてAppleが処理し、支払い情報やApple Accountの情報を当社が受け取ることはありません。購入後の管理・解約はiPhoneの「設定」＞Apple Account＞「サブスクリプション」からいつでも行えます。",
+            "zh": "ShelfFlip 每月提供 3 次免费查询，另提供面向日常高频淘货的自动续期订阅（ShelfFlip Pro：含 7 天免费试用的年度方案或周度方案，适用合理使用额度）。付款由 Apple 通过 App Store 处理，我们不会获取你的付款信息或 Apple 账户信息。除非在当前周期结束前至少 24 小时取消，订阅将自动续期，你随时可在 iPhone「设置」＞ Apple 账户 ＞「订阅」中管理或取消。",
+        },
+        "delete": {
+            "en": "Your inventory items and profit ledger are stored locally on your iPhone; deleting the app removes all local data. We do not store user accounts or keep copies of uploaded item photos after generating your result.",
+            "ja": "在庫データや利益の記録はiPhone内に保存され、アプリを削除するとすべて消去されます。当社サーバーにアカウント情報や送信済みの商品写真を保存することはありません。",
+            "zh": "你的库存清单和利润账本均保存在 iPhone 本机，删除 App 即全部清除。我们的服务器不保存用户账号，也不会在生成结果后留存你上传的商品照片。",
+        },
+        "kids": {
+            "en": "ShelfFlip is a resale pricing and inventory tool and does not knowingly collect personal information from children.",
+            "ja": "本アプリはリセール向けの相場・在庫管理ツールであり、お子さまの個人情報を意図的に収集することはありません。",
+            "zh": "本 App 为二手转卖估价与库存管理工具，不会故意收集儿童的个人信息。",
+        },
+        "safety_h": {"en": "Marketplace & estimate disclaimer", "ja": "相場・手数料に関するご注意", "zh": "行情与平台免责说明"},
+        "safety": {
+            "en": "ShelfFlip is an independent tool and is not affiliated with or endorsed by eBay, Poshmark, Depop, Mercari or Yahoo! Auctions. Price ranges, marketplace fees, shipping costs and profit estimates are for reference only.",
+            "ja": "本アプリは各マーケットプレイスとは提携していない独立したツールです。表示される相場・販売手数料・送料・見込み利益は参考値であり、実際の売却価格や各サービスの最新条件は出品先にてご確認ください。",
+            "zh": "ShelfFlip 为独立工具，与 eBay、Poshmark、Depop、Mercari 或 Yahoo! 拍卖无任何隶属或合作关系。页面展示的成交区间、手续费率、运费与净利润测算仅供参考，请以各平台最新规则及实际成交为准。",
+        },
+        "faq": {
+            "en": [
+                ("I subscribed to ShelfFlip Pro, but my lookups did not unlock.", "Open Settings in ShelfFlip and tap Restore Purchases while signed in with the same Apple Account you used to subscribe."),
+                ("How do I cancel or manage my subscription?", "Open iPhone Settings > Apple Account > Subscriptions and select ShelfFlip."),
+                ("How do I revoke AI data sharing consent?", "Open Settings inside ShelfFlip to review or revoke your cloud AI consent at any time. Your saved inventory and profit ledger remain viewable offline."),
+                ("Why is there a fair-use limit on ShelfFlip Pro?", "Each lookup runs live web search grounding and AI image analysis. Fair-use daily and monthly caps are sized generously for everyday thrifting while keeping responses fast and preventing automated abuse."),
+                ("Will I lose my inventory and profit records if I switch iPhones?", "Your records are stored on your iPhone. Transferring via iCloud or an encrypted computer backup preserves them."),
+            ],
+            "ja": [
+                ("ShelfFlip Proに登録したのに制限が解除されない", "アプリ内の「設定」を開き、「購入を復元」をタップしてください。購入時に使用したApple Accountでサインインしていることをご確認ください。"),
+                ("サブスクリプションの解約・変更方法", "iPhoneの「設定」＞Apple Account＞「サブスクリプション」からShelfFlipを選択して管理・解約できます。"),
+                ("AIデータ送信の同意を取り消すには", "アプリ内の「設定」画面からいつでも同意を取り消せます。同意を取り消した後も、保存済みの在庫や利益の記録はオフラインで確認できます。"),
+                ("Proプランにも利用回数の上限があるのはなぜですか？", "リアルタイムの相場検索と画像解析を安定して高速に提供し、不正な大量アクセスを防ぐため、日々の仕入れには十分な範囲で一定のフェアユース上限を設けています。"),
+                ("機種変更すると在庫や利益データは消えますか？", "データはiPhone内に保存されています。iCloudまたはパソコン上の暗号化されたバックアップから新しいiPhoneへ移行すると引き継げます。"),
+            ],
+            "zh": [
+                ("已经订阅了 ShelfFlip Pro，但还是提示次数受限。", "请在 ShelfFlip 的「设置」中点击「恢复购买」，并确认当前登录的是订阅时使用的同一个 Apple 账户。"),
+                ("如何取消或管理订阅？", "打开 iPhone「设置」＞ Apple 账户 ＞「订阅」，找到 ShelfFlip 即可管理或取消。"),
+                ("如何撤销云端 AI 上传授权？", "随时可在 ShelfFlip 的「设置」页查看并撤销同意。撤销后，已保存的库存清单和利润账本仍可离线查看。"),
+                ("为什么 ShelfFlip Pro 也有合理使用额度？", "每次查价都会实时联网检索成交行情并解析商品图片。合理使用上限按日常个人淘货高频使用设计，用于保障查询速度稳定并防止异常刷量。"),
+                ("换手机后库存和账本数据会丢失吗？", "数据保存在 iPhone 本机，通过 iCloud 或电脑加密备份迁移到新 iPhone 即可完整保留。"),
+            ],
+        },
+    },
 }
 
 T = {
