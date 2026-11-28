@@ -181,6 +181,87 @@ APPS = {
             ],
         },
     },
+    "spokebill": {
+        "name": {"en": "SpokeBill", "ja": "SpokeBill", "zh": "SpokeBill"},
+        "updated": {"en": "Last updated: 28 November 2026", "ja": "最終更新日：2026年11月28日", "zh": "最后更新：2026年11月28日"},
+        "desc": {
+            "en": "Describe a job for 20 seconds on site and get a clean, itemised estimate or invoice, or snap a handwritten note. Export PDFs and share a web approval link so clients can confirm in any browser.",
+            "ja": "現場で20秒ほど話すだけで、見積書・請求書の明細を自動で作成できるアプリです。手書きメモの写真やテキスト入力にも対応します。PDFの書き出しから取引先向けのWeb承認リンク発行まで行えます。",
+            "zh": "在现场说 20 秒即可自动生成带明细的报价单或发票，也支持拍摄手写草稿或文字输入。一键导出专业 PDF，并可生成网页确认链接供客户在浏览器中确认。",
+        },
+        "summary": {
+            "en": "{app} requires no account, contains no ads and does not track you across apps or websites. Your estimates, invoices, client list and business profile (company name, logo, tax registration number and bank details) are stored locally on your iPhone. Only when you use AI drafting—and only after you agree on the consent screen—are your submitted voice clip, photo or notes sent through our managed server to Google Gemini AI to draft your document. Only when you tap Create Approval Link are the document title, client name, business details, line items and totals stored temporarily on our server to display the client approval page.",
+            "ja": "{app}はアカウント登録は不要で、広告や他社アプリ・Webサイトをまたぐトラッキングはありません。作成した見積書・請求書、取引先情報、事業者情報（社名・ロゴ・適格請求書発行事業者登録番号・振込先）はすべてiPhone内に保存されます。AIによる書類作成では、事前の同意画面で承諾した場合のみ、音声・写真・補足メモを当社が管理するサーバーを経由してGoogle Gemini AIへ送信します。また、Web承認リンクを発行した場合のみ、その書類のタイトル・取引先名・事業者名・登録番号・明細・金額が承認ページ表示のために当社サーバーへ一時保存されます。",
+            "zh": "{app} 无需注册账号，不含广告，也不进行跨 App 或跨网站追踪。你的报价单、发票、客户列表和企业抬头（名称、Logo、税号与收款信息）均保存在 iPhone 本机。只有当你使用 AI 开单并在知情同意页明确同意后，你提交的语音、照片或补充说明才会经由我们管理的服务器发送至 Google Gemini AI 用于生成单据草稿。只有当你主动点击“生成确认链接”时，该单据的标题、客户名、抬头、税号、明细和金额才会临时保存在我们的服务器上以展示客户确认网页。",
+        },
+        "uses": {
+            "en": [
+                "<b>Microphone</b>: used only while you actively record a voice note to draft an estimate or invoice. Nothing is recorded in the background.",
+                "<b>Camera and photo library</b>: used only to capture or pick handwritten notes or receipts for drafting, and to select your business logo for PDFs.",
+                "<b>Cloud AI processing (Google Gemini)</b>: submitted voice clips, photos and notes are sent over HTTPS via our managed server (Cloudflare Workers) to Google Gemini solely to draft your document. They are never used for advertising, linked to your identity or used to train third-party AI models. You can revoke AI consent anytime in the Clients tab.",
+                "<b>Web approval links</b>: only when you tap Create Approval Link are the document title, client name, business name, tax registration number, line items and totals stored on our server (Cloudflare Workers KV) for up to 90 days so your client can view the quote and confirm by entering their name in a browser. Original voice recordings and photos are never included. This is a simple web confirmation record and not a statutory digital signature.",
+                "<b>Anonymous device identifier</b>: a random, non-tracking device ID (not IDFA) is generated locally solely to count your 3 free AI drafts per month.",
+            ],
+            "ja": [
+                "<b>マイク</b>：音声から見積書・請求書の下書きを作成するため、録音ボタンを押している間のみ使用します。バックグラウンドで録音することはありません。",
+                "<b>カメラ・写真ライブラリ</b>：手書きメモや伝票から明細を読み取るための撮影・選択、およびPDFに掲載する社名ロゴ画像の選択にのみ使用します。",
+                "<b>クラウドAI処理（Google Gemini）</b>：音声・写真・補足メモは、書類の下書き作成のみを目的として、当社が管理するサーバー（Cloudflare Workers）を経由してGoogle Gemini AIへHTTPSで送信します。広告目的や第三者のAIモデルの学習には使用せず、個人とひもづけることもありません。アプリ内の「取引先」タブからいつでも「クラウドAIへの送信」の同意を取り消せます。",
+                "<b>Web承認リンク</b>：「承認リンクを発行」をタップした場合のみ、該当書類のタイトル・取引先名・事業者名・登録番号・明細・金額を当社サーバー（Cloudflare Workers KV）に最大90日間保存し、取引先がブラウザから内容を確認し、名前を入力して承認できます。元の録音音声や手書き写真は送信・保存しません。なお、本機能はWeb上で確認を記録する簡易な機能であり、公的な証明力を持つものではありません。",
+                "<b>匿名デバイスID</b>：毎月の無料回数（3回）をカウントするためだけに端末内でランダムに生成されるID（IDFAではありません）を使用します。個人特定や追跡には使いません。",
+            ],
+            "zh": [
+                "<b>麦克风</b>：仅在你主动按下录音键口述单据内容时使用，不会在后台录音。",
+                "<b>相机与相册</b>：仅用于拍摄或选取手写草稿、单据照片以识别明细，以及选择用于 PDF 的企业 Logo 图片。",
+                "<b>云端 AI 处理（Google Gemini）</b>：你提交的语音、照片和补充说明仅用于生成单据草稿，会经由我们管理的服务器（Cloudflare Workers）通过 HTTPS 发送给 Google Gemini AI 处理，不用于广告、不关联真实身份，也不用于第三方 AI 模型训练。你随时可在 App 内「客户与设置」页撤销授权。",
+                "<b>客户网页确认链接</b>：仅当你主动点击“生成确认链接”时，该单据的标题、客户名、企业名称、税号、明细和金额会在我们的服务器（Cloudflare Workers KV）上最多保留 90 天，供客户在浏览器中查看内容并输入姓名确认。原始录音与手写照片不会被包含或保存。该功能仅为网页简易确认记录，不具法定电子签名效力。",
+                "<b>匿名设备标识</b>：仅在 App 内随机生成非追踪用的匿名设备 ID（非 IDFA），用于统计每月 3 次免费 AI 开单额度。",
+            ],
+        },
+        "purchase": {
+            "en": "Manual drafting, PDF export and client management are free. Cloud AI drafting includes 3 free drafts per month, with an optional auto-renewing subscription (SpokeBill Pro: Annual with a 14-day free trial, or Monthly) for unlimited AI drafts. Payments are processed by Apple through the App Store; we never receive your payment details or Apple Account information. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period in iPhone Settings > Apple Account > Subscriptions.",
+            "ja": "SpokeBillでは、手入力での書類作成・PDF書き出し・取引先管理を無料で利用できます。AIによる書類作成は毎月3回まで無料で試せるほか、回数無制限で自動更新のサブスクリプション「SpokeBill Pro」も用意しています（14日間の無料トライアル付き年額プラン／月額プラン）。決済はApp Storeを通じてAppleが処理し、支払い情報やApple Accountの情報を当社が受け取ることはありません。現在の期間が終了する24時間前までに解約しない限り、自動更新されます。購入後の管理・解約はiPhoneの「設定」＞Apple Account＞「サブスクリプション」から行えます。",
+            "zh": "SpokeBill 的手动建单、PDF 导出和客户管理均免费使用；AI 语音与拍照开单每月提供 3 次免费额度，另提供不限次数的自动续期订阅（SpokeBill Pro：含 14 天免费试用的年度订阅或月度订阅）。费用由 Apple 通过 App Store 结算，我们不会获取你的付款信息或 Apple 账户信息。除非在当前周期结束前至少 24 小时取消，订阅将自动续期，你随时可在 iPhone「设置」＞ Apple 账户 ＞「订阅」中管理或取消。",
+        },
+        "delete": {
+            "en": "Your estimates, invoices, clients and business profile stay on your iPhone; deleting the app removes all local data. We do not store user accounts or keep copies of uploaded voice clips or photos after drafting. Shared web approval link records expire automatically after up to 90 days.",
+            "ja": "見積書・請求書、取引先一覧、事業者情報はiPhone内に保存され、アプリを削除するとすべて消去されます。当社サーバーにアカウント情報や送信済みの音声・写真を保存し続けることはありません。発行済みのWeb承認リンクのデータは最大90日で自動的に削除されます。",
+            "zh": "你的报价单、发票、客户列表和企业抬头均保存在 iPhone 本机，删除 App 即全部清除。我们的服务器不保存用户账号，也不会在生成草稿后留存你上传的语音或照片。已生成的客户网页确认记录将在最多 90 天后自动过期删除。",
+        },
+        "kids": {
+            "en": "SpokeBill is a business quoting and invoicing tool and does not knowingly collect personal information from children.",
+            "ja": "本アプリは業務用の見積書・請求書作成を支援するツールであり、お子さまの個人情報を意図的に収集することはありません。",
+            "zh": "本 App 为面向业务场景的报价与开票工具，不会故意收集儿童的个人信息。",
+        },
+        "safety_h": {"en": "Important notice", "ja": "ご利用上の注意", "zh": "使用提示"},
+        "safety": {
+            "en": "Always review AI-drafted line items, quantities, unit prices, tax calculations and tax registration numbers before sending a document to a client. Web approval links record a client's name entered in a browser for convenience and do not constitute a legally binding statutory digital signature.",
+            "ja": "AIで作成した見積書・請求書の品目・数量・単価・消費税額・登録番号は、送付前に必ず内容をご確認ください。Web承認リンクは、取引先がブラウザ上で名前を入力して確認を記録する機能です。法令に基づく署名の効力や公的な証明力はありません。",
+            "zh": "请务必在向客户发送前核对 AI 生成的品目、数量、单价、税额及税号信息。客户网页确认链接仅用于在浏览器中输入姓名记录确认意向，不具备法定电子签名或公证效力。",
+        },
+        "faq": {
+            "en": [
+                ("I subscribed to SpokeBill Pro, but my AI draft limit did not unlock.", "Open the Clients tab in SpokeBill and tap Restore Purchases while signed in with the same Apple Account you used to subscribe."),
+                ("How do I cancel or manage my subscription?", "Open iPhone Settings > Apple Account > Subscriptions and select SpokeBill."),
+                ("How do I revoke cloud AI consent?", "Open the Clients tab in SpokeBill to revoke cloud AI upload consent at any time. Manual document creation and PDF export continue to work without AI."),
+                ("Is a web approval link a legally binding digital signature?", "No. It lets your client view the quote in a browser and confirm by entering their name as a convenient record. Use a qualified signing service if a transaction requires a statutory digital signature."),
+                ("Will I lose my documents and clients if I switch iPhones?", "Your records are stored on your iPhone. Transferring via iCloud or an encrypted computer backup preserves them."),
+            ],
+            "ja": [
+                ("SpokeBill Proに登録したのに制限が解除されない", "アプリ内の「取引先」タブを開き、「購入を復元」をタップしてください。購入時と同じApple Accountでサインインしているかご確認ください。"),
+                ("サブスクリプションの解約・変更方法", "iPhoneの「設定」＞Apple Account＞「サブスクリプション」からSpokeBillを選択して管理・解約できます。"),
+                ("「クラウドAIへの送信」の同意を取り消すには", "アプリ内の「取引先」タブにある「クラウドAIへの送信」から、いつでも同意を取り消せます。同意を取り消した後も、手入力での書類作成やPDF書き出しは引き続き利用できます。"),
+                ("Web承認リンクに公的な証明力はありますか？", "いいえ。取引先がブラウザで内容を確認し、名前を入力して承認を記録する簡易な確認機能です。法令に基づく効力が必要な取引には、別途、適切な手段をご利用ください。"),
+                ("機種変更すると書類や取引先のデータは消えますか？", "データはiPhone内に保存されています。iCloudまたはパソコン上の暗号化されたバックアップから新しいiPhoneへ移行すると引き継げます。"),
+            ],
+            "zh": [
+                ("已经订阅了 SpokeBill Pro，但还是提示次数受限。", "请在 SpokeBill 的「客户与设置」页点击「恢复购买」，并确认当前登录的是订阅时使用的同一个 Apple 账户。"),
+                ("如何取消或管理订阅？", "打开 iPhone「设置」＞ Apple 账户 ＞「订阅」，找到 SpokeBill 即可管理或取消。"),
+                ("如何撤销云端 AI 上传授权？", "随时可在「客户与设置」页的 AI 授权项撤销同意。撤销后，手动新建单据和 PDF 导出仍可正常使用。"),
+                ("客户网页确认链接等同于法定电子签名吗？", "不是。它仅用于让客户在浏览器中查看报价并输入姓名记录确认，如需具有法定效力的电子签章，请另行使用合规电子签约服务。"),
+                ("换手机后单据和客户数据会丢失吗？", "数据保存在 iPhone 本机，通过 iCloud 或电脑加密备份迁移到新 iPhone 即可完整保留。"),
+            ],
+        },
+    },
 }
 
 T = {
