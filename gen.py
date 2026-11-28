@@ -262,6 +262,84 @@ APPS = {
             ],
         },
     },
+    "pawclear": {
+        "name": {"en": "PawClear", "ja": "PawClear", "zh": "PawClear"},
+        "updated": {"en": "Last updated: 28 November 2026", "ja": "最終更新日：2026年11月28日", "zh": "最后更新：2026年11月28日"},
+        "desc": {
+            "en": "Snap a pet food ingredient label, a human food, a houseplant or a vet lab sheet and get clear, plain-language ratings tailored to your pet's allergies, plus a shareable care card for family or pet sitters.",
+            "ja": "ペットフードの原材料表示や身近な食べ物・観葉植物、動物病院の検査結果を撮るだけで、気をつけたいポイントをわかりやすく確認できるアプリです。ペットのアレルギーに合わせたチェックや、家族・シッター向けのお世話カード共有にも対応しています。",
+            "zh": "拍一下宠粮配料表、人类食物、室内植物或宠物医院化验单，结合毛孩子的过敏史给出清晰易懂的成分解读与问诊建议，还可一键生成宠物照护卡分享给家人或寄养店。",
+        },
+        "summary": {
+            "en": "{app} requires no account, contains no ads and does not track you across apps or websites. Your pet profiles and scan history stay on your iPhone. Only when you start a scan—and only after you agree on the consent screen—are the photo, text note and basic pet profile context (species, age and allergies) sent through our managed server to Google Gemini AI solely to create your result. Only when you tap Share Care Card are the care card fields you chose to include stored temporarily on our server to display the read-only page.",
+            "ja": "{app}はアカウント登録が不要で、広告や他社アプリ・Webサイトをまたぐトラッキングはありません。ペットのプロフィールやスキャン履歴はすべてiPhone内に保存されます。スキャンを実行し、事前の同意画面で同意した場合のみ、送信した写真・入力テキスト・ペットの基本情報（犬・猫の別、年齢、アレルギー）が当社管理のサーバーを経由してGoogle Geminiへ送信されます。また、お世話カードを共有した場合のみ、カードに掲載する項目が閲覧専用ページの表示のため当社サーバーへ一時保存されます。",
+            "zh": "{app} 无需注册账号，不含广告，也不进行跨 App 或跨网站追踪。你的宠物档案与历史扫描记录均保存在 iPhone 本机。只有当你主动发起扫描并在知情同意页明确同意后，你提交的照片、补充文字及宠物基本信息（物种、年龄、过敏史）才会经由我们管理的服务器发送至 Google Gemini AI，且仅用于生成本次参考结果。只有当你主动点击「分享照护卡」时，照护卡中的展示字段才会临时保存在我们的服务器上以供只读网页访问。",
+        },
+        "uses": {
+            "en": [
+                "<b>Camera and photo library</b>: used only to capture or pick photos of pet food labels, human foods, plants or vet lab reports that you choose to check.",
+                "<b>Cloud AI processing (Google Gemini)</b>: submitted photos, text notes and pet context (species, age and allergies) are sent over HTTPS via our managed server (Cloudflare Workers) to Google Gemini solely to produce your result. They are never used for advertising, linked to your identity or used to train third-party AI models. You can revoke AI consent anytime in Settings.",
+                "<b>Shareable Care Card</b>: only when you create or update a care card link are the pet care details you entered (such as species, feeding notes, allergies, medications and emergency contact) stored on our server (Cloudflare Workers KV) for up to 90 days so family or a pet sitter can view the read-only page in a browser. Original scan photos are never included.",
+                "<b>Anonymous device identifier</b>: a random, non-tracking device ID (not IDFA) is generated locally solely to count your 3 free scans per month.",
+            ],
+            "ja": [
+                "<b>カメラ・写真ライブラリ</b>：原材料表示、食べ物・植物、検査結果の確認のために、ご自身で撮影・選択した画像のみを使用します。",
+                "<b>クラウドAI処理（Google Gemini）</b>：送信した写真・入力テキスト・ペットの基本情報（犬・猫の別、年齢、アレルギー）は、結果の作成のみを目的として当社管理のサーバー（Cloudflare Workers）を経由してGoogle GeminiへHTTPSで送信されます。広告目的や第三者のAIモデルの学習には使用せず、個人を特定することもありません。設定画面からいつでもAIデータ送信の同意を取り消せます。",
+                "<b>お世話カードの共有リンク</b>：お世話カードのリンクを作成・更新した場合のみ、入力したお世話情報（犬・猫の別、食事メモ、アレルギー、常備薬、緊急連絡先など）を当社サーバー（Cloudflare Workers KV）に最大90日間保存します。保存中は、家族やペットシッターがブラウザから閲覧できます。スキャン時の写真は含まれません。",
+                "<b>匿名デバイスID</b>：毎月の無料スキャン回数（月3回）をカウントするためだけに端末内でランダムに生成されるID（IDFAではありません）を使用します。個人特定や追跡には使いません。",
+            ],
+            "zh": [
+                "<b>相机与相册</b>：仅用于拍摄或选取你主动提交的宠粮配料表、人类食物、室内植物或医院化验单照片。",
+                "<b>云端 AI 处理（Google Gemini）</b>：你提交的照片、补充文字与宠物基本信息（物种、年龄、过敏史）仅用于生成本次参考结果，会经由我们管理的服务器（Cloudflare Workers）通过 HTTPS 发送至 Google Gemini AI 处理，不用于广告、不关联真实身份，也不用于第三方 AI 模型训练。你随时可在「设置」中撤销同意。",
+                "<b>宠物照护卡分享链接</b>：仅当你主动创建或更新照护卡链接时，你填写的照护信息（如物种、喂食说明、过敏史、常用药与紧急联系人）会在我们的服务器（Cloudflare Workers KV）上最多保留 90 天，供家人或寄养店通过浏览器查看只读页面。扫描上传的原始照片不会被包含。",
+                "<b>匿名设备标识</b>：仅在 App 内随机生成非追踪用的匿名设备 ID（非 IDFA），用于统计每月 3 次免费扫描额度。",
+            ],
+        },
+        "purchase": {
+            "en": "PawClear includes 3 free scans every month and an optional auto-renewing subscription (PawClear Pro: Annual with a 14-day free trial, or Weekly) for unlimited scans. Payments are processed by Apple through the App Store; we never receive your payment details or Apple Account information. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period in iPhone Settings > Apple Account > Subscriptions.",
+            "ja": "PawClearは毎月3回まで無料でスキャンでき、回数無制限の自動更新サブスクリプション「PawClear Pro」（14日間の無料トライアル付き年額プラン／週額プラン）も用意しています。無料トライアル期間終了後は、期間終了の24時間前までに解約しない限り自動的に有料プランへ移行し、以降も自動更新されます。決済はApp Storeを通じてAppleが処理し、支払い情報やApple Accountの情報を当社が受け取ることはありません。購入後の管理・解約はiPhoneの「設定」＞Apple Account＞「サブスクリプション」からいつでも行えます。",
+            "zh": "PawClear 每月提供 3 次免费扫描，另提供不限次数的自动续期订阅（PawClear Pro：含 14 天免费试用的年度方案或周度方案）。付款由 Apple 通过 App Store 处理，我们不会获取你的付款信息或 Apple 账户信息。除非在当前周期结束前至少 24 小时取消，订阅将自动续期，你随时可在 iPhone「设置」＞ Apple 账户 ＞「订阅」中管理或取消。",
+        },
+        "delete": {
+            "en": "Your pet profiles and scan history are stored locally on your iPhone; deleting the app removes all local data. We do not store user accounts or keep copies of uploaded scan photos after generating your result. Shared care card pages expire automatically after up to 90 days.",
+            "ja": "ペットのプロフィールとスキャン履歴はiPhone内に保存され、アプリを削除するとすべて消去されます。当社サーバーにアカウント情報や送信済みの写真を保存することはありません。共有したお世話カードのデータは最大90日で自動的に削除されます。",
+            "zh": "你的宠物档案和历史扫描记录均保存在 iPhone 本机，删除 App 即全部清除。我们的服务器不保存用户账号，也不会在生成结果后留存你上传的扫描照片。已分享的宠物照护卡链接数据将在最多 90 天后自动过期删除。",
+        },
+        "kids": {
+            "en": "PawClear is a pet care reference tool for pet owners and does not knowingly collect personal information from children.",
+            "ja": "本アプリは飼い主向けのペットケア参考ツールであり、お子さまの個人情報を意図的に収集することはありません。",
+            "zh": "本 App 面向宠物主人提供日常照护参考，不会故意收集儿童的个人信息。",
+        },
+        "safety_h": {"en": "Veterinary disclaimer", "ja": "獣医療に関するご注意", "zh": "兽医免责声明"},
+        "safety": {
+            "en": "PawClear provides information for reference only and does not replace a licensed veterinarian. If your pet seems unwell or may have eaten something toxic, contact your vet immediately.",
+            "ja": "この結果は参考情報であり、獣医師の判断に代わるものではありません。いつもと様子が違う場合や、誤って何かを食べてしまったおそれがある場合は、早めに獣医師にご相談ください。",
+            "zh": "PawClear 提供的解读结果仅供参考，不能替代持证兽医的专业判断。如宠物出现异常或疑似误食危险物品，请立即联系兽医就医。",
+        },
+        "faq": {
+            "en": [
+                ("I subscribed to PawClear Pro, but my scan limit did not unlock.", "Open Settings in PawClear and tap Restore Purchases while signed in with the same Apple Account you used to subscribe."),
+                ("How do I cancel or manage my subscription?", "Open iPhone Settings > Apple Account > Subscriptions and select PawClear."),
+                ("How do I revoke AI data sharing consent?", "Open Settings inside PawClear to review or revoke your cloud AI consent at any time. Your saved pet profiles and past scan history remain viewable offline."),
+                ("How long does a shared Care Card link stay active?", "Each Care Card link remains viewable in a browser for up to 90 days and can be refreshed anytime from the pet's detail screen."),
+                ("Will I lose my pets and scan history if I switch iPhones?", "Your records are stored on your iPhone. Transferring via iCloud or an encrypted computer backup preserves them."),
+            ],
+            "ja": [
+                ("PawClear Proに登録したのに制限が解除されない", "アプリ内の「設定」を開き、「購入を復元」をタップしてください。購入時に使用したApple Accountでサインインしていることをご確認ください。"),
+                ("サブスクリプションの解約・変更方法", "iPhoneの「設定」＞Apple Account＞「サブスクリプション」からPawClearを選択して管理・解約できます。"),
+                ("AIデータ送信の同意を取り消すには", "アプリ内の「設定」画面からいつでも同意を取り消せます。同意を取り消した後も、保存済みのペット情報や過去のスキャン履歴はオフラインで確認できます。"),
+                ("共有したお世話カードはいつまで閲覧できますか？", "作成したリンクは最大90日間ブラウザで閲覧できます。ペット詳細画面からいつでも最新の内容に更新できます。"),
+                ("機種変更するとペット情報や履歴は消えますか？", "データはiPhone内に保存されています。iCloudまたはパソコン上の暗号化されたバックアップから新しいiPhoneへ移行すると引き継げます。"),
+            ],
+            "zh": [
+                ("已经订阅了 PawClear Pro，但还是提示次数受限。", "请在 PawClear 的「设置」中点击「恢复购买」，并确认当前登录的是订阅时使用的同一个 Apple 账户。"),
+                ("如何取消或管理订阅？", "打开 iPhone「设置」＞ Apple 账户 ＞「订阅」，找到 PawClear 即可管理或取消。"),
+                ("如何撤销云端 AI 上传授权？", "随时可在 PawClear 的「设置」页查看并撤销同意。撤销后，已保存的宠物档案和历史扫描记录仍可离线查看。"),
+                ("分享出去的宠物照护卡链接有效多久？", "每个照护卡链接最长可在浏览器中查看 90 天，随时可在宠物详情页重新生成最新链接。"),
+                ("换手机后宠物档案和历史记录会丢失吗？", "数据保存在 iPhone 本机，通过 iCloud 或电脑加密备份迁移到新 iPhone 即可保留。"),
+            ],
+        },
+    },
 }
 
 T = {
